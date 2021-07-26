@@ -28,3 +28,36 @@ let miAuto = {
 
 miAuto.detalleDelAuto();  //lamado de la funcion haciendo relacion al objeto
  //Auto Corolla 2020 ---> reultado en consola
+
+//---------- Funcion constructora---------------------
+
+let miAuto = {
+  marca: "Toyota",
+  modelo: "Corolla",
+  annio: 2020,
+  detalleDelAuto: function(){
+      console.log(`Auto ${this.modelo} ${this.annio}`);
+  }
+};
+
+function auto(marca,modelo, annio) {
+  this.marca = marca;
+  this.modelo = modelo;
+  this.annio = annio;
+}
+undefined
+auto
+ƒ auto(marca,modelo, annio) {
+  this.marca = marca;
+  this.modelo = modelo;
+  this.annio = annio;
+}
+let autoNuevo = new auto("Tesla", "Modelo3", "2020");
+undefined
+autoNuevo
+auto {marca: "Tesla", modelo: "Modelo3", annio: "2020"}
+let autoNuevo2 = new auto("Tesla", "Model x", 2018);
+let autoNuevo3 = new auto("Toyota", "Corolla", 2020);
+undefined
+autoNuevo2
+auto {marca: "Tesla", modelo: "Model x", annio: 2018}

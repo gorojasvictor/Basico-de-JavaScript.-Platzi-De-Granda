@@ -1,4 +1,4 @@
-//Metodos push, agregar uno o mas elementos de un array
+//Metodos agregar o eliminar uno o mas elementos de un array
 
 let numArray = [1,2,3,4,5];
 
